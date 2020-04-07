@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05827DB01B7D3C1C8095E0D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		05827DB01B7D3C1C8095E0D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		19980A0F9CBF8878024768DA /* Pods-Base_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base_Tests.release.xcconfig"; path = "Target Support Files/Pods-Base_Tests/Pods-Base_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		39E1CE6CBC749679A4F664E1 /* Pods_Base_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Base_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52612ACCD3AC79EEAC75EA2E /* Pods-Base_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base_Example.debug.xcconfig"; path = "Target Support Files/Pods-Base_Example/Pods-Base_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6248AE6892CFAAF53615C747 /* Pods-Base_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base_Example.release.xcconfig"; path = "Target Support Files/Pods-Base_Example/Pods-Base_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6FC9DEB3669A5B2B80719B8C /* Base.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.podspec; path = ../Base.podspec; sourceTree = "<group>"; };
-		828F0AECD4B637F07225114E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6FC9DEB3669A5B2B80719B8C /* Base.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Base.podspec; path = ../Base.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		828F0AECD4B637F07225114E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9BD9042D7DE34D4BD55A5930 /* Pods_Base_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Base_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA34C5F252FD956ED86F4EF4 /* Pods-Base_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Base_Tests/Pods-Base_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,6 @@
 				BA34C5F252FD956ED86F4EF4 /* Pods-Base_Tests.debug.xcconfig */,
 				19980A0F9CBF8878024768DA /* Pods-Base_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +314,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Base_Example/Pods-Base_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Base/Base.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

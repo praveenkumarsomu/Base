@@ -1,0 +1,27 @@
+{
+  "name": "Base",
+  "version": "0.1.0",
+  "summary": "A short description of Base.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amirulhosen@gmail.com/Base",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amirulhosen@gmail.com": "praveenkumarsomu@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/amirulhosen@gmail.com/Base.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Base/Classes/**/*",
+  "dependencies": {
+    "Swinject": [
+
+    ]
+  }
+}

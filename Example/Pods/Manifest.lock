@@ -1,0 +1,23 @@
+PODS:
+  - Base (0.1.0):
+    - Swinject
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Base (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Swinject
+
+EXTERNAL SOURCES:
+  Base:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Base: 2f1421b6f41b9a7ab1ccf67654a91a0cd5180391
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: 1c14946f962fb95a6ac1a36825680ab2416ba1bb
+
+COCOAPODS: 1.8.4
